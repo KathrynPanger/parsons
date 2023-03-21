@@ -7,8 +7,8 @@ class Helper():
             resultString=resultString.strip()
             if len(resultString) == 0 or resultString == "null" : return None
             try:
-                t=ast.literal_eval(resultString)
-                return t
+                typedValue=ast.literal_eval(resultString)
+                return typedValue
 
             except ValueError:
                 return resultString
